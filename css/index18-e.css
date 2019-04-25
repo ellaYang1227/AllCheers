@@ -1,0 +1,967 @@
+﻿@charset "utf-8";
+/* index-e 好鄰市集(main 內容)樣式 */
+
+
+/* banner Swiper(可觸屏滑動) */
+/******************************************************************/
+
+#banner-all{
+	padding-bottom: 20px;
+}
+
+@media (min-width: 1200px) {
+#banner-all{
+	padding-bottom: 50px;
+}
+
+}
+
+
+/* 主標題 */
+/******************************************************************/
+.MainTitle{
+	padding-bottom: 15px;
+	text-align: center;
+	color: #f3731f;
+	line-height: 26px;
+}
+.MainTitle h1{
+	font-size: 24px;
+	font-weight: 600;
+	margin: 0;
+}/*主標題 h1*/
+
+.MainTitle p{
+	color: #aaa;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 500;
+	margin: 0 0 5px 0;
+}/*主標題 英文*/
+
+.MainTitle-line {
+    margin-left: auto;
+    margin-right: auto;
+    height: 4px;
+    width: 50px;
+    background-color: #FDE3D2;
+}/*主標題 底線*/
+
+@media (min-width: 768px) {
+.MainTitle{
+	padding-bottom: 50px;
+	line-height: 32px;
+}
+
+.MainTitle h1{
+	font-size: 30px;
+}/*主標題 h1*/
+
+.MainTitle p{
+	font-size: 14px;
+}/*主標題 英文*/
+}
+
+
+/* 倒數計時 */
+/******************************************************************/
+.colockbox{
+	font-size: 15px;
+	line-height: 20px;
+	text-align: center;
+	border-bottom: 1px solid #d2d2d2;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.status-start{
+	color: #f3731f;
+}/*倒數計時器 狀態(開始)*/
+
+.status-end{
+	color: #aaa;
+}/*倒數計時器 狀態(未開賣或結束)*/
+
+.status-start,
+.status-end{
+	padding-top: 6px;
+	padding-bottom: 6px;
+}/*倒數計時器 狀態(開始)或(未開賣或結束)*/
+
+.colockbox .status-text{
+	display: inline-block;
+}/*倒數計時器 狀態文字*/
+
+.colockbox small{
+	font-size: 80%;
+}
+
+.colockbox .status-text,
+.colockbox span.day,
+.colockbox span.hour,
+.colockbox span.minute,
+.colockbox span.second{
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+@media (max-width: 575px) {
+.colockbox{
+	font-size: 12px;
+	line-height: 16px;
+}
+
+.colockbox .status-text{
+	display: block;
+}/*倒數計時器 狀態文字*/
+
+.status-start,
+.status-end{
+	height: 45px;
+}/*倒數計時器 狀態(開始)或(未開賣或結束)*/
+
+}
+
+/* 店家 */
+/******************************************************************/
+#StoreTabs-swiper {
+	text-align: center;
+}
+
+.StoreTabs a {
+	font-size: 20px;
+	text-align: center;
+	float: left;
+	width: 25%;
+	color: #444;
+	text-decoration: none;
+}
+.StoreTabs a.active {
+	color: #f3731f;
+}
+
+@media (max-width: 767px){
+#StoreTabs-swiper .swiper-wrapper{
+	margin-bottom: 0;
+}
+.StoreTabs-link{
+	margin-top: -5px;
+}
+}
+
+@media (max-width: 320px) {
+.StoreTabs a {
+	font-size: 16px;
+}
+}
+
+@media (min-width: 768px) {
+.StoreTabs a {
+	font-size: 22px;
+	width: 20%;
+	text-align: left;
+}
+}
+
+.store-single{
+	margin-bottom: 15px;
+}
+
+.store-single .store-ImgFrame{
+	display:flex;
+    align-items:center;
+    justify-content:center;
+	overflow: hidden;
+	width: 100%;
+	height: 100px;
+	background: #222;
+}/* 圖片外框*/
+
+.store-single .store-ImgFrame img{
+	transition: all 0.5s ease 0s; /*圖片 轉場的時間*/
+	width: 100%;
+    height: auto;
+    overflow: hidden;
+	display:inline-block;
+    vertical-align:middle;
+}
+
+.store-single .store-ImgFrame img:hover{
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}/*圖片 滑鼠滑入 放大圖片*/
+
+.store-single .store-name{
+	color: #444;
+    font-size: 14px;
+    line-height: 20px;
+    height: 20px;
+    overflow: hidden;
+    font-weight: 600;
+    margin: 0;
+}/*店家名稱*/
+
+.store-single .store-classification{
+	color: #888888;
+    font-size: 12px;
+	border-bottom: 1px solid #d2d2d2;
+	padding-bottom: 5px;
+	margin: 0;
+}/*店家類型*/
+
+.store-single .store-introduction,
+.store-single .store-tal,
+.store-single .store-add{
+	text-align: left;
+    font-size: 12px;
+	line-height: 18px;
+	margin: 0;
+	color: #888888;
+}/*店家(簡介、電話、地址)*/
+
+.store-single .store-introduction{
+	margin: 5px 0 10px 0;
+	height: 36px;
+    overflow: hidden;
+}/*店家簡介*/
+
+.store-single .store-add{
+	height: 40px;
+    overflow: hidden;
+}/*店家地址*/
+
+.store-single span{
+	padding-right: 5px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+.store-single .store-add{
+	height: 20px;
+}/*店家地址*/	
+}
+
+@media (min-width: 768px) {
+.store-single .store-ImgFrame{
+	height: 150px;
+}/* 圖片外框*/
+
+.store-single .store-name{
+    font-size: 16px;
+    line-height: 22px;
+    height: 22px;
+}/*店家名稱*/
+
+.store-single .store-classification{
+    font-size: 14px;
+}/*店家類型*/
+
+.store-single .store-introduction,
+.store-single .store-tal,
+.store-single .store-add{
+    font-size: 14px;
+	line-height: 20px;
+}/*店家(簡介、電話、地址)*/
+
+
+.store-single .store-introduction{
+	height: 60px;
+}/*店家簡介*/
+}
+
+/* 店家分類 */
+/******************************************************************/
+.classification-content{
+	background: #f8f8f8;
+	padding: 15px 15px 10px 15px;
+}/* 店家分類 內容 */
+
+.classification-content .form-group{
+	margin: 5px 0 10px 0;
+}
+
+.btn-ClassificationSearch{
+	color: #f3731f;
+	border: 1px solid #ccc;
+	background: #eee;
+	height: 34px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}/* 店家分類 內容 搜尋 按鈕*/
+
+.btn-ClassificationSearch:focus,
+.btn-ClassificationSearch:hover{
+	color: #f3731f;
+}/* 店家分類 內容 搜尋 按鈕*/
+
+.btn-ClassificationSearch i{
+	padding-left: 3px;
+}/* 店家分類 內容 搜尋 按鈕 icon*/
+
+.classification-content ul{
+	margin-bottom: 0;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+.classification-content ul li{
+	padding: 5px 10px;
+	text-align: left;
+	font-size: 15px;
+}
+
+.classification-content ul li a{
+	padding: 0;
+	color: #888;
+}/* 店家分類 連結項目 */
+
+.classification-content ul li a:focus,
+.classification-content ul li a:hover {
+	background: none;
+	color: #444;
+}/* 店家分類 連結項目 */
+
+.classification-content font{
+	float: right;
+}/* 店家分類 連結項目 */
+
+.classification-more-link{
+	clear: both;
+	border-top: 1px solid #d2d2d2;
+	font-size: 12px;
+	padding-top: 10px;
+}/* 更多店家分類 */
+
+.classification-more-link a{
+	color: #f3731f;
+}/* 更多店家分類 */
+
+.classification-more-link a:focus,
+.classification-more-link a:hover{
+	color: #B65617;
+}/* 更多店家分類 */
+
+@media (min-width: 992px) {
+.classification-content .form-group{
+	margin: 20px 0;
+}
+.classification-content ul{
+	margin-bottom: 0;
+	margin-left: -10px;
+	margin-right: -10px;
+	height: 221px;
+}
+.classification-more-link{
+	font-size: 14px;
+	padding-top: 10px;
+}/* 更多店家分類 */
+}
+
+/* 好鄰商情 */
+/******************************************************************/
+
+#business-swiper .BusinessTitle{
+	text-align: left;
+	font-size: 14px;
+    line-height: 20px;
+    height: 20px;
+	color: #444;
+    overflow: hidden;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+}/*單一 活動 優惠 標題*/
+
+.Business-MoreLink {
+    font-size: 12px;
+	text-align: right;
+	color: #888888;
+}/*更多連結*/
+
+.Business-MoreLink a{
+   color: #888888;
+}/*更多連結*/
+
+.Business-MoreLink a:focus,
+.Business-MoreLink a:hover{
+   text-decoration: none;
+   color: #6F6F6F;
+}/*更多連結*/
+
+#business-swiper .business-ImgFrame {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow: hidden;
+    width: 100%;
+    height: 100px;
+    background: #222;
+}/*圖片 外框*/
+
+#business-swiper .business-ImgFrame img {
+    transition: all 0.5s ease 0s; /*圖片 轉場的時間*/
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+	display:inline-block;
+    vertical-align:middle;
+}
+
+#business-swiper .business-ImgFrame img:hover{
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}/*圖片 滑鼠滑入 放大圖片*/
+
+#business-swiper .divider {
+    height: 1px;
+    overflow: hidden;
+	background-color: #d2d2d2;
+	margin: 5px 0;
+}
+
+#business-swiper ul{
+    margin-bottom: 0;
+}
+
+#business-swiper ul li{
+	text-align: left;
+	font-size: 12px;
+    line-height: 18px;
+	overflow: hidden;
+	height: 18px;
+    margin: 0;
+    color: #888888;
+}
+
+@media (max-width: 767px) { 
+#business-swiper ul li.business-location{
+    line-height: 18px;
+	height: 36px;
+}
+}
+
+#business-swiper .business-types{
+	font-size: 10px;
+	color: #f3731f;
+	font-weight: 600;
+}/*單一 活動 優惠 類型*/
+
+#business-swiper .business-types font{
+	color: #888;
+	float: right;
+	font-weight: 500;
+}
+
+@media (min-width: 768px) {
+#business-swiper .BusinessTitle{
+	font-size: 16px;
+    line-height: 22px;
+    height: 22px;
+}/*單一 活動 優惠 標題*/
+
+#business-swiper .business-ImgFrame {
+    width: 100%;
+    height: 150px;
+}/*圖片 外框*/
+
+.Business-MoreLink {
+    font-size: 14px;
+}/*更多連結*/
+#business-swiper ul li{
+	font-size: 14px;
+    line-height: 20px;
+	height: 20px;
+}
+#business-swiper .business-types{
+	font-size: 12px;
+	color: #f3731f;
+	font-weight: 600;
+}/*單一 活動 優惠 類型*/
+
+}
+
+/* 好鄰媒合 */
+/******************************************************************/
+.match-ImgFrame{
+	width: 100%;
+	height: 60px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	overflow: hidden;
+}/* 圖片外框*/
+
+.match-ImgFrame img{
+	width: 100%;
+}/* 圖片外框 圖片*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+.match-ImgFrame{
+	height: 110px;
+}/* 圖片外框*/
+}
+
+@media (min-width: 992px) {
+.match-ImgFrame{
+	height: 96px;
+}/* 圖片外框*/
+}
+
+#match-swiper .match-single{
+	text-align: left;
+	margin-top: 10px;
+}/* 好鄰媒合 單一 內容 */
+
+#match-swiper .match-single .match-bg{
+	background: #f8f8f8;
+	padding: 8px;
+}/* 好鄰媒合 單一 內容(背景色) */
+
+#match-swiper .match-single h5{
+	font-size: 12px;
+	color: #f3731f;
+	margin: 0;
+	line-height: 18px;
+	height: 18px;
+	overflow: hidden;
+}/*單一 內容 媒合分類*/
+
+#match-swiper .match-single .MatchsTitle{
+	font-size: 14px;
+	line-height: 20px;
+	height: 20px;
+	overflow: hidden;
+	color: #f3731f;
+	font-weight: 600;
+	color: #888888;
+	margin: 2px 0;
+}/*單一 內容 標題*/
+
+#match-swiper .match-single .MatchsName{
+	font-size: 10px;
+	line-height: 16px;
+	height: 16px;
+	overflow: hidden;
+	color: #888888;
+	text-align: right
+}/*單一 內容 位置 暱稱*/
+
+@media (min-width: 768px) {
+#match-swiper .match-single h5{
+	font-size: 14px;
+	line-height: 20px;
+	height: 20px;
+}/*單一 內容 媒合分類*/
+
+#match-swiper .match-single .MatchsTitle{
+	font-size: 16px;
+	line-height: 22px;
+	height: 22px;
+}/*單一 內容 標題*/
+#match-swiper .match-single .MatchsName{
+	font-size: 12px;
+	line-height: 18px;
+	height: 18px;
+}/*單一 內容 位置 暱稱*/
+}
+
+/* 好鄰分享 */
+/******************************************************************/
+@media (min-width: 992px) {
+
+.ShareIt-all .col-md-8{
+	width: 66.7%;
+}/*滑動邊框才不會裁掉*/
+
+.ShareIt-all .col-md-4{
+	width: 33.3%;
+}/*滑動邊框才不會裁掉*/
+}
+
+.ShareItList-all{
+	margin-top: 10px;
+}
+
+@media (min-width: 992px) {
+.ShareItList-all{
+	margin-top: -10px;
+}
+}
+
+.ShareItList-single{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}/*(列表)單一*/
+
+#ShareIt-swiper .ShareItTitle,
+.ShareItList-single .ShareItTitle{
+	text-align: left;
+	font-size: 14px;
+    line-height: 20px;
+    height: 40px;
+	color: #444;
+    overflow: hidden;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+}/*單一 分享 標題*/
+
+.ShareItList-single .ShareItTitle{
+    margin: 0;
+}/*(列表)單一 分享 標題*/
+
+#ShareIt-swiper .ShareItText{
+    text-align: left;
+	font-size: 12px;
+    line-height: 20px;
+    height: 60px;
+	color: #888888;
+    overflow: hidden;
+    margin: 0;
+}/*單一 分享 部分內文*/
+
+#ShareIt-swiper .ShareIt-ImgFrame,
+.ShareItList-single .ShareItList-ImgFrame {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow: hidden;
+    background: #222;
+}/*圖片 外框*/
+
+#ShareIt-swiper .ShareIt-ImgFrame {
+    width: 100%;
+    height: 100px;
+}/*(圖文)圖片 外框*/
+
+.ShareItList-single .ShareItList-ImgFrame {
+    width: 35%;
+    height: 66px;
+	border: 1px solid #d2d2d2;
+	float: left;
+}/*(列表)圖片 外框*/
+
+#ShareIt-swiper .ShareIt-ImgFrame img,
+.ShareItList-single .ShareItList-ImgFrame img {
+    transition: all 0.5s ease 0s; /*圖片 轉場的時間*/
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+	display:inline-block;
+    vertical-align:middle;
+}
+
+#ShareIt-swiper .ShareIt-ImgFrame img:hover,
+.ShareItList-single .ShareItList-ImgFrame img:hover{
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}/*圖片 滑鼠滑入 放大圖片*/
+
+.ShareItList-single .ShareItList-TextContent{
+	width: 65%;
+	padding: 0 5px;
+	float: left;
+}/*單一 (列表) 文字內容*/
+
+#ShareIt-swiper .divider {
+    height: 1px;
+    overflow: hidden;
+	background-color: #d2d2d2;
+	margin: 5px 0;
+}
+
+#ShareIt-swiper ul,
+.ShareItList-single ul{
+    margin-bottom: 0;
+}
+
+#ShareIt-swiper ul li,
+.ShareItList-single ul li{
+	text-align: left;
+	font-size: 12px;
+    line-height: 18px;
+	overflow: hidden;
+	height: 18px;
+    margin: 0;
+    color: #888888;
+}
+
+#ShareIt-swiper .ShareIt-types,
+.ShareItList-single .ShareIt-types{
+	font-size: 10px;
+	color: #f3731f;
+	font-weight: 600;
+}/*單一 分享 類型*/
+
+#ShareIt-swiper .ShareIt-types font{
+	font-weight: 500;
+	color: #888;
+	float: right;
+	padding-left: 10px;
+}
+
+#ShareIt-swiper .ShareIt-types span{
+	padding-right: 3px;
+}
+
+@media (min-width: 992px) {
+.ShareItList-single{
+	padding-top: 10px;
+	padding-bottom: 8px;
+}/*(列表)單一*/
+}
+
+@media (min-width: 768px) {
+#ShareIt-swiper .ShareItTitle,
+.ShareItList-single .ShareItTitle{
+	font-size: 16px;
+    line-height: 22px;
+    height: 44px;
+}/*單一 分享 標題*/
+
+#ShareIt-swiper .ShareItText{
+	font-size: 14px;
+    line-height: 20px;
+    height: 60px;
+}/*單一 分享 部分內文*/
+
+#ShareIt-swiper .ShareIt-ImgFrame {
+    width: 100%;
+    height: 150px;
+}/*圖片 外框*/
+
+#ShareIt-swiper ul li,
+.ShareItList-single ul li{
+	font-size: 14px;
+    line-height: 20px;
+	height: 20px;
+}
+
+#ShareIt-swiper .ShareIt-types,
+.ShareItList-single .ShareIt-types{
+	font-size: 12px;
+}/*單一 分享 類型*/
+}
+
+/* 好鄰佈告欄 */
+/******************************************************************/
+.Announcement-all{
+	margin-top: -5px;
+}/* 全部 好鄰佈告欄*/
+
+
+.Announcement-single {
+	margin-bottom: 5px;
+	margin-top: 5px;
+	text-align: left;
+}/* 單一 好鄰佈告欄*/
+
+.Announcement-bg{
+	background: #f8f8f8;
+	padding: 8px;
+}
+
+@media (min-width: 992px) {
+.Announcement-bg{
+	height: 66px;
+	padding: 10px 8px;
+}
+
+}
+
+
+.Announcement-single h4{
+	font-size: 10px;
+    color: #f3731f;
+	line-height: 18px;
+    height: 18px;
+	margin: 0;
+	overflow: hidden;
+	font-weight: 600;
+}/* 單一 好鄰佈告欄 h4*/
+
+.AnnouncementTitle{
+	font-size: 14px;
+    line-height: 20px;
+    height: 40px;
+	color: #444;
+    overflow: hidden;
+    font-weight: 600;
+	margin: 0;
+}/*單一 標題*/
+
+
+@media (min-width: 992px) {
+.Announcement-all{
+	margin-top: -10px;
+}/* 全部 好鄰佈告欄*/
+
+.Announcement-single {
+	margin-bottom: 8px;
+	margin-top: 10px;
+}/* 單一 好鄰佈告欄*/
+}
+
+@media (min-width: 768px) {
+.Announcement-single h4{
+	font-size: 12px;
+	line-height: 20px;
+    height: 20px;
+}/* 單一 好鄰佈告欄 h4*/
+
+.AnnouncementTitle{
+	font-size: 16px;
+    line-height: 22px;
+    height: 22px;
+}/*單一 標題*/
+}
+
+/* 官方單元banner */
+/******************************************************************/
+
+#UnitBanner-all .Blogger-all,
+#UnitBanner-all .AboutUs-all,
+#UnitBanner-all .Investment-all{
+	display:flex;
+    align-items:center;
+    justify-content:center;
+	text-align: center;
+	height: 250px;
+	width: 100%;
+	padding: 20px;
+}/*部落客徵選、關於好鄰市集、進駐好鄰店家*/
+
+
+#UnitBanner-all .Blogger-all{
+	background:#fff url(../images/shared/Blogger_bg.jpg) top center scroll no-repeat;　
+	background-size: cover;
+}/*部落客徵選*/
+
+#UnitBanner-all .AboutUs-all{
+	background:#fff url(../images/shared/AboutUs_bg.jpg) center center scroll no-repeat;　
+	background-size: cover;
+}/*關於好鄰市集*/
+
+#UnitBanner-all .Investment-all{
+	background:#fff url(../images/shared/Investment_bg.jpg) center center scroll no-repeat;　   background-size: cover;
+}/*進駐好鄰店家*/
+
+#UnitBanner-swiper .swiper-wrapper{
+	margin-bottom: 0;
+}
+
+#UnitBanner-swiper .swiper-pagination-bullet{
+	width: 5px;
+    height: 5px;
+	background: none;
+    opacity: 1;
+	border: 1px solid #fff;
+}/*圓點分頁*/
+
+#UnitBanner-swiper .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+	margin: 0 3px;
+}/*圓點分頁*/
+
+
+#UnitBanner-swiper .swiper-pagination-bullet-active{
+	background: #fff;
+}/*圓點分頁*/
+
+@media (min-width: 768px) {
+#UnitBanner-swiper .swiper-pagination-bullet{
+	width: 10px;
+    height: 10px;
+	border: 2px solid #fff;
+}/*圓點分頁*/
+
+}
+
+#UnitBanner-all .Blogger-all h3,
+#UnitBanner-all .AboutUs-all h3,
+#UnitBanner-all .Investment-all h3{
+	color: #444;
+	font-size: 36px;
+	font-weight: 550;
+	width: 100%;
+	margin-top: 0;
+	margin-bottom: 15px;
+}/*官方單元banner 標題文字*/
+
+.btn-UnitBanner{
+	border-radius: 50px;
+	padding: 6px 40px;
+	font-weight: 600;
+	font-size: 18px;
+	box-shadow:0px 4px 3px rgba(0,0,0,0.3);
+	color: #F3731F;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-color: #F3731F;
+}/*官方單元banner 按鈕*/
+
+.btn-UnitBanner:focus,
+.btn-UnitBanner:hover,
+.btn-UnitBanner:active {
+    text-decoration: none;
+	background: #F3731F;
+	color: #fff;
+	position: relative;
+    top: 1px;
+    left: 1px;
+}
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+#UnitBanner-all .Blogger-all,
+#UnitBanner-all .AboutUs-all,
+#UnitBanner-all .Investment-all{
+	height: 300px;
+}/*部落客徵選、關於好鄰市集、進駐好鄰店家*/
+
+#UnitBanner-all .Blogger-all,
+#UnitBanner-all .Investment-all{
+	width: 50%;
+	
+}/*部落客徵選、進駐好鄰店家*/
+
+#UnitBanner-all .AboutUs-all{
+	width: 70%;
+}/*關於好鄰市集*/
+
+#UnitBanner-all .Blogger-all h3,
+#UnitBanner-all .AboutUs-all h3,
+#UnitBanner-all .Investment-all h3{
+	font-size: 40px;
+}/*官方單元banner 標題文字*/
+}
+
+@media (min-width: 1200px) {
+#UnitBanner-all .Blogger-all,
+#UnitBanner-all .AboutUs-all,
+#UnitBanner-all .Investment-all{
+	height: 350px;
+}/*部落客徵選、關於好鄰市集、進駐好鄰店家*/
+
+#UnitBanner-all .Blogger-all,
+#UnitBanner-all .Investment-all{
+	width: 25%;
+	
+}/*部落客徵選、進駐好鄰店家*/
+
+#UnitBanner-all .AboutUs-all{
+	width: 50%;
+}/*關於好鄰市集*/
+
+#UnitBanner-all .Blogger-all h3,
+#UnitBanner-all .AboutUs-all h3,
+#UnitBanner-all .Investment-all h3{
+	font-size: 48px;
+}/*官方單元banner 標題文字*/
+}
+
